@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T15:29:56.965Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="m-TnlMXAJBCwpVFnRlap" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T15:54:49.155Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="7GBnReKV5MR2zjMMQEf4" version="24.1.0" type="github">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="934" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -91,7 +91,7 @@
         <mxCell id="o9o5UsSc7OfWi7YUzBIb-17" value="可选" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;flipH=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="110" width="280" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="o9o5UsSc7OfWi7YUzBIb-18" value="AddFood(OrderID, Food)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="o9o5UsSc7OfWi7YUzBIb-18" value="AddFood(OrderID, FoodID)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
           <mxGeometry x="-0.0629" relative="1" as="geometry">
             <mxPoint x="270" y="220" as="sourcePoint" />
             <Array as="points">
