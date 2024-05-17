@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T07:59:58.630Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="lHHys1mMGaQwvQdgTN0R" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-17T10:09:59.154Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="UKbVet0phjyEmVtAUVJ6" version="24.3.1" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="3161" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -853,19 +853,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4Edl7W-mafc4BUh3C5-0-1" value="UNINIT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-1500" y="2810" width="90" height="90" as="geometry" />
+          <mxGeometry x="-1510" y="2780" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4Edl7W-mafc4BUh3C5-0-2" value="RUNNABLE" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-1245" y="2640" width="90" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="4Edl7W-mafc4BUh3C5-0-3" value="RUNNING" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-1248.5" y="2820" width="90" height="90" as="geometry" />
+          <mxGeometry x="-1248.5" y="2780" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4Edl7W-mafc4BUh3C5-0-4" value="ZOMBIE" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-958.5" y="2910" width="90" height="90" as="geometry" />
+          <mxGeometry x="-958.5" y="2780" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4Edl7W-mafc4BUh3C5-0-6" value="SLEEPING" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-1200" y="2980" width="90" height="90" as="geometry" />
+          <mxGeometry x="-990" y="2640" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4Edl7W-mafc4BUh3C5-0-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4Edl7W-mafc4BUh3C5-0-1" target="4Edl7W-mafc4BUh3C5-0-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -873,17 +870,48 @@
             <mxPoint x="-1320" y="2790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4Edl7W-mafc4BUh3C5-0-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4Edl7W-mafc4BUh3C5-0-2" target="4Edl7W-mafc4BUh3C5-0-3">
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-9" value="调用proc_init或wakeup_proc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1370" y="2780" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-10" value="调用alloc_proc构建PCB" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1592" y="2780" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4Edl7W-mafc4BUh3C5-0-2" target="4Edl7W-mafc4BUh3C5-0-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1110" y="2770" as="sourcePoint" />
-            <mxPoint x="-1060" y="2720" as="targetPoint" />
+            <mxPoint x="-1140" y="2660" as="sourcePoint" />
+            <mxPoint x="-1090" y="2610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4Edl7W-mafc4BUh3C5-0-9" value="调用proc_init或wakeup_proc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1390" y="2735" width="60" height="30" as="geometry" />
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-12" value="try_free_pages&lt;div&gt;do_wai&lt;span style=&quot;background-color: initial;&quot;&gt;t&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;do_sleep&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1148.5" y="2700" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="4Edl7W-mafc4BUh3C5-0-10" value="调用alloc_proc分配页表" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1193.5" y="2750" width="60" height="30" as="geometry" />
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-14" value="wakeup_proc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1215" y="2650" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-15" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4Edl7W-mafc4BUh3C5-0-6" target="4Edl7W-mafc4BUh3C5-0-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-990" y="2840" as="sourcePoint" />
+            <mxPoint x="-950" y="2790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1050" y="2570" />
+              <mxPoint x="-1160" y="2660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4Edl7W-mafc4BUh3C5-0-2" target="4Edl7W-mafc4BUh3C5-0-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1160" y="2810" as="sourcePoint" />
+            <mxPoint x="-1110" y="2760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="4Edl7W-mafc4BUh3C5-0-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1610" y="2825" as="sourcePoint" />
+            <mxPoint x="-1560" y="2850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Edl7W-mafc4BUh3C5-0-22" value="do_exit" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1078.5" y="2790" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
